@@ -1,4 +1,5 @@
-## Learing React from scratch
+# Learing React from scratch
+## Part One :
 1. Firstly create a html file named index.html
 2. Add CDN links in the bottom of your `<body></body>` part
     ```html
@@ -66,4 +67,39 @@
     </script>
     ```
 
-## Hurray! You have created the first project using react 🎉
+### Hurray! You have created the first project using react 🎉🎉🎉
+---
+
+## Part Two :
+1. Now we are going to write clean code which means we are going to separate the react file in another file.
+2. Create a `app.js` file.
+    ```cmd
+    |- index.html
+    |- app.js
+    ```
+3. And now move all the contents of the `<script>` file where we wrote the `React` code and also provide the `src` for the newly created `app.js` location in the `<script>`.
+
+    #### **index.html**
+    ```html
+    <body>
+        <div id="root"></div>
+
+        <script ...></script>
+        <script ...></script>
+
+        <script src="./app.js"></script>
+    </body>
+    ```
+
+    #### **app.js**
+    ```javascript
+    
+        const heading = React.createElement("h1", {}, "Hello From React");
+        
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+
+        root.render(heading);
+    ```
+
+### Yeah! Writing clean code is very easy 😍
+---
